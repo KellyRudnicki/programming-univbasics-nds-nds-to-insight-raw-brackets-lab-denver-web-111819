@@ -22,7 +22,6 @@ def directors_totals(nds)
    
       outer_array += 1
     end
-  pp results
+  results
 
-  #nil
 end

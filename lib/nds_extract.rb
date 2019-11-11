@@ -14,7 +14,7 @@ def directors_totals(nds)
  while outer_array < directors_database.length do 
    directors_name = directors_database[outer_array][:name]
    
-   irectors_film_total = 0
+   directors_film_total = 0
    inner_hash = 0 
    
    while inner_hash < directors_database[outer_array][:movies].length do
@@ -48,8 +48,6 @@ def directors_totals(nds)
   # ...
   # ...
   # ...
-  #
-  #
   # Be sure to return the result at the end!
   nil
 end

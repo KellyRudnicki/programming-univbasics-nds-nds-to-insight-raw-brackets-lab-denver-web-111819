@@ -15,10 +15,11 @@ def directors_totals(nds)
    directors_name = directors_database[outer_array][:name]
    
    while inner_array < directors_database[outer_array][:movies].length do
+		      directors_films = directors_database[outer_array][:movies][inner_hash][:worldwide_gross]
 		      puts directors_database[outer_hash][:movies][inner_hash][:title]
 		      inner_hash += 1
 		    end
-   directors_films = directors_database[outer_array][:movies].length 
+   
    
    total_films_by_director << {directors_name => directors_films}
    

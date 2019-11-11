@@ -2,14 +2,10 @@ $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'directors_database'
 
 def directors_totals(nds)
-
- results = {
-   
- }
  
  directors_database
  outer_array = 0
- total_films_by_director = []
+ results = {}
 
  while outer_array < directors_database.length do 
    directors_name = directors_database[outer_array][:name]

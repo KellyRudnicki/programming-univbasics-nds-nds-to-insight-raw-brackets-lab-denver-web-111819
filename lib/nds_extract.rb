@@ -3,7 +3,6 @@ require 'directors_database'
 
 def directors_totals(nds)
 
- #directors_database
  outer_array = 0
  results = {}
   
@@ -25,5 +24,5 @@ def directors_totals(nds)
     end
   pp results
 
-  nil
+  #nil
 end

@@ -18,19 +18,18 @@ def directors_totals(nds)
    inner_hash = 0 
    
    while inner_hash < directors_database[outer_array][:movies].length do
-		      directors_film_total << directors_database[outer_array][:movies][inner_hash][:worldwide_gross]
+		      directors_film_total += directors_database[outer_array][:movies][inner_hash][:worldwide_gross]
 		      
 		      inner_hash += 1
 		end
    
    
-   #total_films_by_director << {directors_name => directors_film_total}
+   total_films_by_director << {directors_name => directors_film_total}
    
    outer_array += 1
   end
   
-  puts directors_film_total
-  #puts total_films_by_director
+ puts total_films_by_director
   
   #result
 

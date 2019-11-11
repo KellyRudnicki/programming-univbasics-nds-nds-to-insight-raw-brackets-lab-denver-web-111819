@@ -5,9 +5,7 @@ def directors_totals(nds)
 
  directors_database
  outer_array = 0
- results = {
-    
-  }
+ results = {}
   
    while outer_array < directors_database.length do 
    directors_name = directors_database[outer_array][:name]

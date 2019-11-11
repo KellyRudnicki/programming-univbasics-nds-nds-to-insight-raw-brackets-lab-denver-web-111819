@@ -20,11 +20,11 @@ def directors_totals(nds)
 		end
    
    
-   total_films_by_director << {directors_name => directors_film_total}
+   results[directors_name] = directors_film_total
    
    outer_array += 1
   end
-  pp total_films_by_director 
+  pp results
   
   #result
 

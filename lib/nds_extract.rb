@@ -14,45 +14,35 @@ def directors_totals(nds)
  while outer_array < directors_database.length do 
    directors_name = directors_database[outer_array][:name]
    
+   irectors_film_total = 0
+   inner_hash = 0 
    
-   while inner_array < directors_database[outer_array][:movies].length do
-		      directors_films += directors_database[outer_array][:movies][inner_hash][:worldwide_gross]
-		      puts directors_database[outer_hash][:movies][inner_hash][:title]
+   while inner_hash < directors_database[outer_array][:movies].length do
+		      directors_film_total += directors_database[outer_array][:movies][inner_hash][:worldwide_gross]
+		      
 		      inner_hash += 1
-		    end
+		end
    
    
-   total_films_by_director << {directors_name => directors_films}
+   total_films_by_director << {directors_name => directors_film_total}
    
    outer_array += 1
   end
   
   puts total_films_by_director
-
- while director_index < nds.length do 
-   directors_name = nds[director_index][:name]
-   results[directors_name] = 0 
-   film_index = 0 
-   
-   while film_index < nds[director_index][:movies].length do 
-     results[director_name] += nds[director_index][:movies][film_index][:worldwide_gross]
-     film_index += 1
-    end 
-    
-   director_index += 1
    
   end
   
-  result
+  #result
 
   # Remember, it's always OK to pretty print what you get *in* to make sure
   # that you know what you're starting with!
   #
   #
   # The Hash result be full of things like "Jean-Pierre Jeunet" => "222312123123"
-  result = {
+  #result = {
     
-  }
+  #}
   # Use loops, variables and the accessing method, [], to loop through the NDS
   # and total up all the
   # ...

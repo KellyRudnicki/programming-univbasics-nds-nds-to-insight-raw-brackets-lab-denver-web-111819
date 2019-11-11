@@ -23,12 +23,12 @@ def directors_totals(nds)
 		      inner_hash += 1
 		end
    
-   puts directors_film_total
+   pp directors_film_total
    #total_films_by_director << {directors_name => directors_film_total}
    
    outer_array += 1
   end
-  puts directors_name
+  pp directors_name
  #puts total_films_by_director
   
   #result
